@@ -1,0 +1,26 @@
+---
+title: "Test thesis"
+author: "My Name"
+date: "2019"
+site: bookdown::bookdown_site
+documentclass: book
+output: 
+  bookdown::pdf_book:
+    keep_tex: true
+    includes:
+      in_header: latex/preamble.tex
+      before_body: latex/before_body.tex
+---
+
+# Preface{-}
+
+Some preface text.
+\mainmatter
+
+# Introduction
+
+Intro text.
+
+```{r}
+sessioninfo::session_info()
+```
